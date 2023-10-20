@@ -16,7 +16,8 @@ const EditCar = () => {
       const form = e.target;
       const Image = form.Image.value;
       const Name = form.Name.value;
-      const brandLower = form.brand.value;
+      const brand = form.brand.value;
+      let brandLower = brand.toLowerCase();
       const type = form.type.value;
       const price = form.price.value;
       const Rating = form.Rating.value;
@@ -28,7 +29,7 @@ const EditCar = () => {
   
   let car2={Image,Name, brandLower, type, price, Rating,details}
 
-    fetch(`https://car-com-backend-hlo2j6lud-jhriyazs-projects.vercel.app/cars/${_id}`,{
+    fetch(`https://car-com-backend-616ubipzo-jhriyazs-projects.vercel.app/cars/${_id}`,{
       method: 'PUT',headers:{
         'content-type': 'application/json'
       },
@@ -44,7 +45,7 @@ const EditCar = () => {
       
     };
    
-    const brands = [
+    const brands= [
       { value: "BMW", label: "BMW" },
       { value: "Ford", label: "Ford" },
       { value: "TOYOTA", label: "TOYOTA" },
@@ -52,8 +53,8 @@ const EditCar = () => {
       { value: "Audi", label: "Audi" },
       { value: "Nissan", label: "Nissan" },
       { value: "Honda", label: "Honda" },
-      { value: "Honda", label: "Honda" },
       { value: "Volkswagen", label: "Volkswagen" },
+      { value: "Mercedes", label: "Mercedes" },
     ];
     const types = [
       { value: "SUV", label: "SUV" },

@@ -9,7 +9,7 @@ const SingleCar = () => {
     const data=useLoaderData().data
     let{brandLower,Image,Name,type,price,Rating,details}=data
     let handleCart=()=>{
-fetch(`https://car-com-backend-hlo2j6lud-jhriyazs-projects.vercel.app/carts/`,{
+fetch(`https://car-com-backend-616ubipzo-jhriyazs-projects.vercel.app/carts/`,{
     method: "POST",headers:{
         "content-type": "application/json"
 

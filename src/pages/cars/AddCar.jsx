@@ -26,7 +26,7 @@ if(!/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?
 
   let car={Image,Name, brandLower, type, price, Rating,details}
 
-  fetch('https://car-com-backend-hlo2j6lud-jhriyazs-projects.vercel.app/cars',{
+  fetch('https://car-com-backend-616ubipzo-jhriyazs-projects.vercel.app/cars',{
     method: 'POST',headers:{
       'content-type': 'application/json'
     },

@@ -7,7 +7,7 @@ const AddBrand = () => {
         const brand = form.brand.value;
         const link = form.link.value;
         const brandDetails={brand,link}
-        fetch('http://localhost:5000/brands',{
+        fetch('https://car-com-backend-616ubipzo-jhriyazs-projects.vercel.app/brands',{
     method: 'POST',headers:{
       'content-type': 'application/json'
     },

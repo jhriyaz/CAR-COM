@@ -4,7 +4,7 @@ import Brand from "./brand";
 const Brands = () => {
     let [data,setData]=useState([])
     useEffect(()=>{
-     fetch('https://car-com-backend-hlo2j6lud-jhriyazs-projects.vercel.app/brands')
+     fetch('https://car-com-backend-616ubipzo-jhriyazs-projects.vercel.app/brands')
      .then(res=>res.json())
      .then(datas=>{
         setData(datas)})},[])

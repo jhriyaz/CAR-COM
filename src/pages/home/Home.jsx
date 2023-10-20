@@ -3,6 +3,7 @@ import Brands from "../../components/brands/Brands";
 import Slider from "../../components/header/Slider";
 import { useState } from "react";
 import AllCars from "../../components/AllCars";
+import Subscribe from "../../components/Subscribe";
 
 const Home = () => {
 
@@ -18,6 +19,7 @@ if(allData.length>10){
      <Slider data={data}></Slider>
      <Brands></Brands>
      <AllCars></AllCars>
+     <Subscribe></Subscribe>
       </>
 
     );
