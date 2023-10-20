@@ -28,7 +28,7 @@ const NavBar = ({theme}) => {
     }
     let email=user?.email
     useEffect(()=>{
-      fetch(`https://car-com-backend-616ubipzo-jhriyazs-projects.vercel.app/carts/${email}`)
+      fetch(`https://car-com-backend-96iwvry0w-jhriyazs-projects.vercel.app/carts/${email}`)
       .then(res=>res.json())
       .then(data=>{
           setCartItems(data.length)
@@ -74,7 +74,7 @@ const NavBar = ({theme}) => {
           </Link>:<div className="hidden none lg:flex justify-center items-center gap-4 ">
             <img src={user?.photoURL?user?.photoURL:head}  alt="Profile Photo"  className="rounded-full w-11"/>
          <div className="flex flex-col justify-center ">
-         <p className=" uppercase font-semibold">{ user.displayName}</p>
+         <p className=" uppercase font-semibold">{ user?.displayName}</p>
          <p className="  text-center mx-auto text-xs font-bold"><button  className={`transTh transTT`} onClick={handleSignOut}>Log Out</button></p>
          </div>
             </div>

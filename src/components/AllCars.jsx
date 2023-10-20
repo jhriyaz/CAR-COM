@@ -7,7 +7,7 @@ const AllCars = () => {
       setData(data.slice(0,9))
     }
     useEffect(()=>{
-     fetch('https://car-com-backend-616ubipzo-jhriyazs-projects.vercel.app/cars')
+     fetch('https://car-com-backend-96iwvry0w-jhriyazs-projects.vercel.app/cars')
      .then(res=>res.json())
      .then(datas=>{
         setData(datas)})},[])
