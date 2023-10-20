@@ -2,7 +2,7 @@
 
 <img src="./public/images/logo-w.png" alt="">
 <a href="https://car-com.web.app/" target="_blank" style="color:red;">Client site LIVE LINK:Click Here</a>
-<a href="https://car-com-backend-96iwvry0w-jhriyazs-projects.vercel.app/" target="_blank" style="color:red;">Backend LINK:Click Here</a>
+<a href="https://car-com-backend.vercel.app/" target="_blank" style="color:red;">Backend LINK:Click Here</a>
 
 <h1 style="text-align:center;">Features</h1>
 <ul style="list-style:upper-roman">
