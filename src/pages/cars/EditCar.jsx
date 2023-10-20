@@ -29,7 +29,7 @@ const EditCar = () => {
   
   let car2={Image,Name, brandLower, type, price, Rating,details}
 
-    fetch(`https://car-com-backend-96iwvry0w-jhriyazs-projects.vercel.app/cars/${_id}`,{
+    fetch(`https://car-com-backend.vercel.app/cars/${_id}`,{
       method: 'PUT',headers:{
         'content-type': 'application/json'
       },

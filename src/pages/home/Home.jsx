@@ -7,22 +7,22 @@ import Subscribe from "../../components/Subscribe";
 
 
 const Home = () => {
-  let[allData,setAllData]=useState([])
+  let[slideData,setSlideData]=useState([])
  useEffect(()=>{
-  fetch('https://car-com-backend-96iwvry0w-jhriyazs-projects.vercel.app/cars')
+  fetch('https://car-com-backend.vercel.app/cars')
 .then(res => res.json())
-.then(data => setAllData(data))
+.then(data => setSlideData(data))
  },[])
 
 
-if(allData.length>10){
-  setAllData(allData.slice(0,9))
+if(slideData.length>10){
+  setSlideData(slideData.slice(0,9))
 }
 
     return (
       <>
      
-     <Slider data={allData}></Slider>
+     <Slider slideData={slideData}></Slider>
      <Brands></Brands>
      <AllCars></AllCars>
      <Subscribe></Subscribe>

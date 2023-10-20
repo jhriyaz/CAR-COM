@@ -9,7 +9,7 @@ const BrandCars = () => {
 return(
     
     <section className="container mx-auto pt-24">
-        <Slider data={data}></Slider>
+        <Slider slideData={data}></Slider>
     <h1 className="transTT uppercase text-4xl font-bold text-center  pb-24">
         Cars from <span className="transTTa ">{data[0].brandLower}</span>
     </h1>

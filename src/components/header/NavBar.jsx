@@ -28,7 +28,7 @@ const NavBar = ({theme}) => {
     }
     let email=user?.email
     useEffect(()=>{
-      fetch(`https://car-com-backend-96iwvry0w-jhriyazs-projects.vercel.app/carts/${email}`)
+      fetch(`https://car-com-backend.vercel.app/carts/${email}`)
       .then(res=>res.json())
       .then(data=>{
           setCartItems(data.length)

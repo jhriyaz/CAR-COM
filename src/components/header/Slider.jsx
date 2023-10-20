@@ -8,12 +8,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css/a11y';
 
-
-import one from '../../../public/images/1.jpg'
-import two from '../../../public/images/2.jpg'
 import { Link } from 'react-router-dom';
 
-const Slider = ({data}) => {
+const Slider = ({slideData}) => {
 
     return (
      <div className=" shadow-lg">
@@ -30,7 +27,7 @@ const Slider = ({data}) => {
         disableOnInteraction: false}
       }
     >
-      {data.map(car=> <SwiperSlide key={car._id}><Link to={'/cars/'+car._id}><img className="w-full h-full" src={car.Image} alt="" /></Link></SwiperSlide>)}
+      {slideData.map(car=> <SwiperSlide key={car._id}><Link to={'/cars/'+car._id}><img className="w-full h-full" src={car.Image} alt="" /></Link></SwiperSlide>)}
      
    
     </Swiper>
