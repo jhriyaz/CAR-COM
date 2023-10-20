@@ -1,0 +1,17 @@
+.transTT{
+    
+    background:-webkit-linear-gradient(30deg,#f50202, #333);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  @apply drop-shadow-lg
+}
+.transTh:hover{
+    background:-webkit-linear-gradient(45deg,#f1f1f1,#b80606 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.transTTa {
+    background:-webkit-linear-gradient(45deg,#f1f1f1,#b80606 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

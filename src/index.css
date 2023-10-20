@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navlinks .active{
+    color: #ff1616;
+    text-decoration: underline;
+    @apply opacity-80 font-bold
+}
