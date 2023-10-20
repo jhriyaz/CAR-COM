@@ -27,20 +27,17 @@
 <p>Protected Routes</p>
     </li>
     <li>
-        <img src="./public/images/23.png" alt="">
+        <img src="./public/images/3.png" alt="">
 <p>Sign In with google ,github or twitter</p>
     </li>
     <li>
-        <img src="./public/images/2.png" alt="">
+        <img src="./public/images/5.png" alt="">
 <p>both html and js validation</p>
     </li>
 </ul>
 
 
 
-<h1 style="text-align:center;">Quiz Answers</h1>
-
-<a href="/questions_and_answers.md" target="_blank" style="color:#ff914d">Click Here</a>
 
 
 
